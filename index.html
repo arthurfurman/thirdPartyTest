@@ -2,17 +2,30 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-
         <script>
-            localStorage.setItem('test', 'test');
+            function saveData() {
+                var data = document.getElementById("dataInput").value;
+                localStorage.setItem("data", data);
+                document.getElementById("savedData").innerHTML = data;
+            }
         </script>
         
     </head>
 
     <body>
-        <h1>Third party iFrame test</h1>
-        <p>Test</p>
-            
+        <h1>Hi! I am a third party iFrame that is embedded in a website</h1>
+        <p>Here is the data that you (the user) have saved in my localStorage:</p>
+        <p id="savedData" style="background-color: yellow;"></p>
+        <script>
+            var data = localStorage.getItem("data");
+            document.getElementById("savedData").innerHTML = data;
+        </script>
+
+        <p>You (the user) can enter new data for me to save in the localStorage:</p>
+        <textarea id="dataInput"></textarea>
+        <button onclick="saveData()">Save new data</button>
+        
+        <p>If only I could easily make sure that the data I save in the localStorage will not be lost once the website removes the deprecation trial, <br> it will be amazing. this is my dream.</p>     
     </body>
         
 </html>
