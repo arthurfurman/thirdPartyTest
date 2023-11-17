@@ -15,14 +15,15 @@
     <body>
         <h1>Hi! I am a third party iFrame that is embedded in a website</h1>
         <p>Here is the data that you have saved in my localStorage:</p>
-        <p id="savedData" style="background-color: yellow; font-weight: italic;"></p> 
+        <p id="savedData" style="background-color: yellow; font-style: italic;"></p> 
         <script>
             var data = localStorage.getItem("data");
             document.getElementById("savedData").innerHTML = data;
         </script>
 
         <p>You can enter new data for me to save in my localStorage:</p>
-        <textarea id="dataInput"></textarea>
+        // textarea spans the whole width of the page
+        <textarea id="dataInput" style="width: 100%;"></textarea>
         <button onclick="saveData()">Save new data</button>
         
         <p>If only I could easily make sure that the data I save in the localStorage will not be lost once the website removes the deprecation trial, <br> it will be amazing. it is my dream.</p>     
