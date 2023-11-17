@@ -1,6 +1,6 @@
 function injectDeprecationTrialTag() {
     const meta = document.createElement('meta');
     meta.httpEquiv = 'origin-trial';
-    meta.content = 'A+DgaiIFdB5jrppCEd3H2OFJDiWp4fNw6dDf0DJdF1UHfEPirmw9op9HmOcY/+W4v9/SZn/jfTYwYWKqTsQu1goAAAB7eyJvcmlnaW4iOiJodHRwczovL2dpdGh1Yi5pbzo0NDMiLCJmZWF0dXJlIjoiRGlzYWJsZVRoaXJkUGFydHlTdG9yYWdlUGFydGl0aW9uaW5nIiwiZXhwaXJ5IjoxNzI1NDA3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9';
+    meta.content = 'A7UhtfO6oAzEYh/Li1NtOhytsU5dau1qG3Dhe67Yav6xbnjq2hFXwdTh0Y3oViCVCH670pq8AGo3amkJvcZByAYAAACIeyJvcmlnaW4iOiJodHRwczovL2FydGh1cmZ1cm1hbi5naXRodWIuaW86NDQzIiwiZmVhdHVyZSI6IkRpc2FibGVUaGlyZFBhcnR5U3RvcmFnZVBhcnRpdGlvbmluZyIsImV4cGlyeSI6MTcyNTQwNzk5OSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ==';
     document.head.append(meta);
 }
